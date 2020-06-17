@@ -1,0 +1,27 @@
+{
+  "name": "bookshoptest",
+  "version": "0.0.1",
+  "description": "Bookshop Test",
+  "main": "index.js",
+  "scripts": {
+    "jest": "npx jest puppeteer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stpchakri/bookshoptest.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Chakri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stpchakri/bookshoptest/issues"
+  },
+  "homepage": "https://github.com/stpchakri/bookshoptest#readme",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^4.0.0"
+  }
+}
