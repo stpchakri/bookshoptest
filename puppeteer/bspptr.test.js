@@ -38,18 +38,6 @@ describe("Bookshop Tests", () => {
         }));
         console.log(aData);
         const bCorrectResults =  aData.every((val) => val.includes(sSearchString));
-        debugger;
-        expect(bCorrectResults).toBe(true);
-     });
-
-     it('Should show details on Selection of table row', async () => {
-        const result = await page.$('#app #books tbody tr');
-        const aData = await page.$$eval('#app #books tbody tr', trs => trs.map((tr) => {
-            return tr.innerText;
-        }));
-        console.log(aData);
-        const bCorrectResults =  aData.every((val) => val.includes(sSearchString));
-        debugger;
         expect(bCorrectResults).toBe(true);
      });
 

@@ -12,6 +12,16 @@
       "args": ["--runInBand", "--config=${workspaceFolder}/jest.config.js"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "protocol": "inspector",
+      "request": "launch",
+      "name": "Launch test files with TestCafe",
+      "program": "${workspaceRoot}/node_modules/testcafe/bin/testcafe.js",
+      "args": ["chrome", "testcafe/bstc.test.js"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceRoot}"
     }
   ]
 }
